@@ -15,11 +15,11 @@ public class EmailServiceImp implements EmailService {
 
     //FindUniqueEmailAddress method will validate all comma separated email addresses and returns number of unique email addresses
     @Override
-    public int findUniqueEmailAddress(String email) {
+    public String findUniqueEmailAddress(String email) {
         //Split email list by "," and store it in the array
         String[] emailList = email.split(",");
         //Returns number of unique email addresses
-        return getUniqueEmailAddressesCount(emailList);
+        return String.valueOf(getUniqueEmailAddressesCount(emailList));
     }
 
     //Method for counting unique email addresses

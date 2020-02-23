@@ -28,22 +28,22 @@ public class EmailServiceImpTest {
     public void genericValidation_one_true(){
         int actualResult = 1;
         String email= "firstname@gmail.com, first.name@gmail.com, first+name@gmail.com";
-        int result = emailService.findUniqueEmailAddress(email);
-        Assert.assertEquals("Not match with the expected result", result,actualResult);
+        String result = emailService.findUniqueEmailAddress(email);
+        Assert.assertEquals("Not match with the expected result", Integer.parseInt(result), actualResult);
     }
     @Test
     public void genericValidation_zero_true(){
         int actualResult = 0;
         String email= "email..@gmail.com, @gmail.com, email format@gmail.com, 12345678@google.com";
-        int result = emailService.findUniqueEmailAddress(email);
-        Assert.assertEquals("Not match with the expected result", result, actualResult);
+        String result = emailService.findUniqueEmailAddress(email);
+        Assert.assertEquals("Not match with the expected result", Integer.parseInt(result), actualResult);
     }
     @Test
     public void genericValidation_two_true() {
         int actualResult = 2;
         String email= "email11@gmail.com, firstname.lastname@gmail.com, .email@gmail.com, email.@gmail.com, email+format@gmail.com";
-        int result = emailService.findUniqueEmailAddress(email);
-        Assert.assertEquals("Not match with the expected result", result, actualResult);
+        String result = emailService.findUniqueEmailAddress(email);
+        Assert.assertEquals("Not match with the expected result", Integer.parseInt(result), actualResult);
 
     }
 }
