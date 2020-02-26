@@ -12,7 +12,7 @@ Where "unique" email addresses means they will be delivered to the same account 
 #### Special characters
 - Usernames can contain letters (a-z), numbers (0-9), and periods (.).
 - Usernames cannot contain an ampersand (&), equals sign (=), underscore (_), apostrophe ('), dash (-), plus sign (+), comma (,), brackets (<,>), or more than one period (.) in a row.
-- Usernames can begin or end with non-alphanumeric characters except periods (.). Other than this rule,
+- Usernames can begin or end with non-alphanumeric characters except periods (.).
 
 
 **Following are steps to create and run an executable jar-**
