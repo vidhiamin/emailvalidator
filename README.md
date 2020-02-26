@@ -25,7 +25,7 @@ Where "unique" email addresses means they will be delivered to the same account 
 
     `$java -jar target/jarname.jar`
 
-###Deploy the executable jar of the project on AWS Elastic Beanstalk
+### Deploy the executable jar of the project on AWS Elastic Beanstalk
 
 
 Use AWS Cloud Elastic Beanstalk service to deploy Email validation project. 
@@ -64,7 +64,7 @@ To verify successful deployment, I used postman to test my application’s post 
 
 ![](screenshots/testing.png)
 
-####Steps to deploy executable jar of the project on AWS Lambda
+#### Steps to deploy executable jar of the project on AWS Lambda
 
 Following are the configuration steps for Lambda services and API Gateway for spring boot application.
 
